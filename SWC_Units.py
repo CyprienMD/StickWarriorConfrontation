@@ -630,7 +630,7 @@ class Boxman(Unit):
     level = 1
     creator_image = "creator_boxman.png"
     upgrades = ["Vitality","Attack","Defence"]
-    description = "A basic unit with no armor and little damage."
+    description = "A basic unit with no armor and little damage output."
     def set_parameters(self):
         self.speed = 9
         #self.range = 80
@@ -870,7 +870,7 @@ class Wisp(Unit):
     level = 2
     creator_image = "creator_wisp.png"
     upgrades = ["Vitality","Attack","Power"]
-    description = "A magic origin creature, that suffers less magic damage and inflicts magic damage. A significant part of the damage he receives are magicly sent back on the source of the damage."
+    description = "A magic origin creature, that suffers less from magic damage and inflicts magic damage itself. A significant part of the damage he receives is magicly sent back on the source of the damage."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 40 #in per minutes
@@ -907,7 +907,7 @@ class Wisp(Unit):
 class Swordman(Unit):
     level = 2
     creator_image = "creator_swordman.png"
-    description = "A warrior with a heavy sword that hits all enemies under it. Nice damage and correct health."
+    description = "A warrior with a heavy sword that hits all enemies under it. Nice damage and decent health."
     def getBonus(fake,enemies,allies,game):
         if len(enemies)>1:
             return 5
@@ -957,7 +957,7 @@ class ScourgeMan(Unit):
     level = 2
     creator_image = "creator_scourgeman.png"
     upgrades = ["Vitality","Attack","Defence"]
-    description = "This soldier has a medium armor and a significant health, and stuns the enemy each 3 attacks."
+    description = "This soldier is tough and has a medium armor. He stuns his enemy avery 3 attacks."
 
     def set_parameters(self):
         self.speed = 9
@@ -1014,7 +1014,7 @@ class Clerk(Unit):
     level = 2
     creator_image = "creator_healer.png"
     upgrades = ["Defence","Range","Power"]
-    description = "A flimsy troup, that heals allies from the distance."
+    description = "A flimsy unit, that heals allies from the distance."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 20 #in per minutes
@@ -1203,7 +1203,7 @@ class Ghost(Unit):
 class AxeThrower(Slinger):
     level = 3
     creator_image = "creator_axethrower.png"
-    description = "This axe thrower will inflicts a big amount of damage at every hit, and may inflicts critical hits on his target, killing it directly if it is low level or inflicting 3 times as much damage."
+    description = "This axe thrower will inflict a big amount of damage on every hit, and may inflict critical hits on his target, killing it directly if it is low level or inflicting 3 times as much damage."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 20 #in per minutes
@@ -1277,7 +1277,7 @@ class BattleMage(Unit):
     level = 3
     creator_image = "creator_battlemage.png"
     upgrades = ["Defence","Range","Power"]
-    description = "A healthy and powerful mage, that can send a magic orb with heavy magical damage and which destroys partly the target's armor."
+    description = "A tough and powerful mage, that can send a magic orb with heavy magical damage that destroys partly the target's armor."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 20 #in per minutes
@@ -1345,7 +1345,7 @@ class HighMage(Unit):
     level = 3
     creator_image = "creator_highmage.png"
     upgrades = ["Vitality","Range","Power"]
-    description = "This flimsy but destructive mage, that can create a projectile which will go through enemies and harm multiple targets."
+    description = "A flimsy but destructive mage, that can create a projectile which will go through enemies and harm multiple targets."
 
     def set_parameters(self):
         self.speed = 9
@@ -1413,7 +1413,7 @@ class Ranger(Slinger):
     level = 4
     creator_image = "creator_ranger.png"
     upgrades = ["Vitality","Attack","Range"]
-    description = "A powerful archer, with poisonned arrows that will slow the enemy then poison him, and he will then finish them with his dangerous knife."
+    description = "A powerful archer, with poisonned arrows that will first slow the enemy then poison him, before he finish them with his sharp knife."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 30 #in per minutes
@@ -1657,7 +1657,7 @@ class Troll(Unit):
     level = 4
     creator_image = "creator_troll.png"
     upgrades = ["Defence","Vitality","Attack"]
-    description = "A really big unit with that much lifes added to a powerful regeneration? The perfect tank. But quite harmless, except followed by archers..."
+    description = "A really big unit with that much resistance added to a powerful regeneration? The perfect tank. But quite harmless alone."
     def set_parameters(self):
         self.speed = 6
         self.att_speed = 15 #in per minutes
@@ -1686,7 +1686,7 @@ class Valkyrie(Unit):
     level = 4
     creator_image = "creator_valkyrie.png"
     upgrades = ["Vitality","Attack","Power"]
-    description = "A winged warrior, fast, armored, both magic and physical damage, heals itself with it's sword and becomes extremely resistant when it is close to death. Better in your army than his..."
+    description = "A winged warrior, fast, armored, and dealing both magic and physical damage. She heals herself with it's sword and becomes extremely resistant when it is close to death. Better in your army than your opponnents'..."
     def set_parameters(self):
         self.speed = 12
         self.range = 80
@@ -1712,7 +1712,7 @@ class Titan(Unit):
     level = 5
     creator_image = "creator_titan.png"
     upgrades = ["Defence","Attack","Power"]
-    description = "A colossal but slow soldier, with heavy armor which send lightning when hitting, which inflicts enormous zone damage, both physical and magic."
+    description = "A colossal but slow soldier, with heavy armor and which send lightning on strike, dealing huge zone damage, both physical and magic."
     def set_parameters(self):
         self.speed = 3
         self.att_speed = 15 #in per minutes
@@ -1851,7 +1851,7 @@ class SkeletonLord(Unit):
     level = 5
     creator_image = "creator_skeletonlord.png"
     upgrades = ["Power","Attack","Defence"]
-    description = "A great skeleton warrior resistant to magic and immune to most effects. His victims will come back from the dead and serve the skeleton lord as lifeless zombies."
+    description = "A great skeleton warrior, resistant to magic and immuned to most effects. His victims will come back from the dead and serve the skeleton lord as soulless zombies."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 35 #in per minutes
@@ -1883,7 +1883,7 @@ class CrowLord(Unit):
     level = 5
     creator_image = "creator_crowlord.png"
     upgrades = ["Defence","Attack","Power"]
-    description = "This dark melee warrior feeds himself of the others pain. When anyone on the map receives damage, he grows even more and earns health and attack. When he finally comes to fights, his crow aura will slow and weaken the nearbie enemies. Creepy..."
+    description = "This dark melee warrior feeds himself of the others pain. When anyone on the map receives damage, he grows even more and earns health and attack. When he finally comes to fight, his crow aura will slow and weaken the nearbie enemies."
     def set_parameters(self):
         self.speed = 9
         self.att_speed = 30 #in per minutes
@@ -1933,7 +1933,7 @@ class Purifier(Slinger):
     level = 5    
     creator_image = "creator_purifier.png"
     upgrades = ["Vitality","Range","Power"]
-    description = "A magic controlling destroyer, which can slow it enemies with spells making mummies, until it's mana reaches maximum. He will then enter in a fury mode and destroys everything in front of him. Truly everything."
+    description = "A magic controlling destroyer, which can slow his enemies with spells summoning mummies, until it's mana reaches maximum. He will then enter in a fury mode and destroys everything in front of him. Yes, everything."
     def set_parameters(self):
         self.speed = 9
         self.damage = 0

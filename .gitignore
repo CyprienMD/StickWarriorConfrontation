@@ -1,5 +1,5 @@
 OldFiles/
-_pycache_/
+__pycache__/
 .vscode/
 Alpha.py
 bestiaire_exterieurs.sav

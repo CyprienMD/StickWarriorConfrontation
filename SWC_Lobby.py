@@ -164,7 +164,7 @@ class Lobby():
     
     def initialise(self):
         self.previous = self.initialise        
-        for [name,menu,pos] in [["Play 1vs1",self.prepare1v1,[size[0]/4,size[1]/2]],["Play against IA",self.prepare1vsIA,[size[0]*3/4,size[1]/2]],["Play Test",self.prepareTest,[size[0]/2,size[1]*1/4]] ]:#, ["Hard Computer",self.prepare1vsIALvl2,[size[0]/2,size[1]*3/4]]]:
+        for [name,menu,pos] in [["Play 1vs1",self.prepare1v1,[size[0]/4,size[1]/2]],["Play against AI",self.prepare1vsIA,[size[0]*3/4,size[1]/2]],["Play Test",self.prepareTest,[size[0]/2,size[1]*1/4]] ]:#, ["Hard Computer",self.prepare1vsIALvl2,[size[0]/2,size[1]*3/4]]]:
             self.all_sprites.add(TextButton(self,pos,"Img/empty_button.png",menu,[],name))
     
     def slaughter(self):
