@@ -9,6 +9,7 @@ import pygame
 from copy import copy
 
 class Animation :
+    pasued = False
     def __init__(self,subject,phases,unit,new=False) :
         self.subject=subject
         self.anim_phases=phases
@@ -18,7 +19,6 @@ class Animation :
             subject.game.temporary_sprites.add(subject)
         self.init_phase()
         self.unit = unit
-        self.paused = False
         self.pause_factor = None
         self.derivatives = []
         #print(self," - Phases are ",phases
