@@ -508,7 +508,7 @@ class HumanPlayer2(HumanPlayer):
 class ComputerPlayer(Player):
     def properInitialise(self):
         costs = []
-        self.money_per_second = 60
+        self.money_per_second = 50
         ordered_waves = []
         waves= {}
         treshholds = []
@@ -611,7 +611,7 @@ class ComputerPlayer(Player):
                 if len(self.army.sprites())<1:
                     biggest  = None
                     for g in self.creatures:
-                        if self.game.all_costs[g.level] < self.fund and (not(biggest) or biggest.level<g.level or (  biggest.level==g.level and min([a.attack_range for a in biggest.attacks])<min([a.attack_range for a in self.attacks])  )):
+                        if self.game.all_costs[g.level] < self.fund and (not(biggest) or biggest.level<g.level):# or (  biggest.level==g.level and min([a.attack_range for a in biggest.attacks])<min([a.attack_range for a in b.attacks])  )):
                             biggest = g
                     if biggest:
                         self.train(biggest)
