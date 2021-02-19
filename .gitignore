@@ -1,8 +1,10 @@
 OldFiles/
+_pycache_/
+.vscode/
 Alpha.py
-bestiaire_exterieur.sav
+bestiaire_exterieurs.sav
 bestiaire.sav
 debug.log
 ProjectileTest.py
-Statistiques_Unités.dos
+Statistiques Unités.dos
 CreatureGenerator.py
